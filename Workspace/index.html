@@ -18,12 +18,44 @@
 <body>
     <h3>JS Session 3</h3> <!-- bunun yorumu böyle -->
     <script>
-        
         console.log('inside body tag')
     </script>
     <script src="./app.js"></script> <!-- en iyi yöntem body nin sonuna yazmak -->
     <script src="./app.js"></script>
     <script>console.log('Inline')</script>
     <script>console.log(1+2)</script>
+    <!-- <script>
+        alert('merhaba')
+    </script> -->
+    <script>
+        console.log(a) // is not define olmuştu. aşağıdaki var a = 5 undefined yaptı. 
+        var a = 5;
+    </script>
+    <script>
+        console.log(b)
+        let b = 5;
+    </script>
+    <script>
+        let c = 5;
+        console.log(c)
+        c = 6;
+        console.log(c)
+        // let c = 6; olmuyor
+    </script>
+    <script>
+        const d = 7;
+        console.log(d) // ilk değer ataması yapmadan çağıramazsın.
+        d = 8;
+    </script>
+    <script>
+        var e;
+        console.log(typeof e)
+        var f = 3;
+        console.log(typeof f)
+        var h = -5;
+        console.log(typeof h)
+        var ı = 1.33;
+        console.log(typeof ı)
+    </script>
 </body>
 </html>
