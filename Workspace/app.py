@@ -6,3 +6,5 @@ print(type(b))
 
 c = 5.4j
 print(type(c))
+
+print(0.1+0.2)
