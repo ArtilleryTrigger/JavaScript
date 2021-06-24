@@ -138,7 +138,7 @@ console.log(015+025)
 console.log(15+025)
 console.log(015+25)
 console.log(15+25)
-console.log(019+029)
+
 
 console.log(9 < 8)
 console.log(9 < 8 < 7)
