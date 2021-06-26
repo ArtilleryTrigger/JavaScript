@@ -148,3 +148,50 @@ console.log('Clarusway'> 'clarusway') //67 > 99 false
 console.log('C' .charCodeAt())
 console.log('c' .charCodeAt())
 console.log('Clarusway'< 'clarusway')
+var ag = '5';
+var ah = 3;
+console.log(ag-ah);
+var ag = '5';
+var ah = '3';
+console.log(ag+ah);
+
+let aı = 100+50*3;
+console.log(aı)
+
+// Logical operators && || !
+
+let ai = 2 && 3;
+console.log(ai);
+
+let x = 0 && false;
+console.log(x);
+
+let aj = 2 || 3;
+console.log(aj);
+
+let ak = 0 || 1;
+console.log(!ak) //verilen değerin boolen tersini döndürür
+console.log(ak)
+
+let password = 'pass';
+console.log(password.length)
+let passwordd = 'passn';
+console.log(passwordd.length >= 5);
+let passworddd = 'passn';
+console.log(passworddd.length >= 5 && passworddd.includes('@'));
+console.log(passworddd.length >= 5 || passworddd.includes('@'));
+let passwordddd = 'p@s';
+console.log(passwordddd.length >= 5 || passwordddd.includes('@') && passwordddd.length >5);
+
+
+// Nullish operator
+
+var al = null;
+console.log(al ?? 'Hello') //null vs text output text
+console.log(al ?? 2) // null vs text output text
+var am;
+console.log(am ?? 'Hello') // undefined vs text output text
+console.log(am ?? 2) // undefined nu vs text output text
+var an = '';
+console.log(an ?? 'Hello') //null vs text output text
+console.log(an ?? 2) // null vs text output text
