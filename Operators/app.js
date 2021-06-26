@@ -195,3 +195,127 @@ console.log(am ?? 2) // undefined nu vs text output text
 var an = '';
 console.log(an ?? 'Hello') //null vs text output text
 console.log(an ?? 2) // null vs text output text
+
+
+
+// If else yapıları
+
+let score = 50;
+if (score >= 50){
+    console.log('Congratulate');
+}
+let scored = 49;
+if (scored >= 50){
+    console.log('Congratulate');
+}//sonuç vermedi
+let scoredd = 49;
+if (!(scoredd >= 50)){
+    console.log('Congratulate');
+}//not verdiğimiz için doğru verdi
+let scoreddd = 50;
+if (scoreddd >= 50) console.log('Congratulate');
+
+let scoredddd = 81;
+if (scoredddd > 80) {
+    console.log('Tebrikler');
+}else{
+    console.log('Daha çok çalışmalısın')
+}
+
+//Ternary Operatör
+let scoreddddd = 81;
+scoreddddd > 80 ? console.log('Tebrikler') : console.log('Daha çok çalışmalısın');
+
+let scoredddddd = 80;
+if (scoredddddd > 80) {
+    console.log('Tebrikler');
+}else if (scoredddddd >= 50){
+    console.log('Fena değil');
+}else{
+    console.log('Daha çok çalışmalısın')
+}
+
+/*let scoreddddddd = prompt("Sınavdan kaç aldın?");
+if (scoreddddddd > 80) {
+    console.log('Tebrikler');
+}else if (scoreddddddd >= 50){
+    console.log('Fena değil');
+}else{
+    console.log('Daha çok çalışmalısın')
+}*/ // kullanıcıdan alıyoruz
+
+let userName;
+userName ? console.log(`Hello ${userName}`) : console.log(`Please login`);
+
+let userNamed = 'Mark'
+userNamed ? console.log(`Hello ${userNamed}`) : console.log(`Please login`);
+
+// ifelse if ternary
+let scoredddddddd = 49;
+scoredddddddd > 80 ? console.log('Tebrikler') : scoredddddddd >= 50 ? console.log('Fena değil'): console.log('Daha çok çalışmalısın');
+
+// Switch Case Statements
+
+var text;
+var fruits = 'Apple';
+
+switch (fruits){
+    case "Banana":
+        text = "Banana is good";
+        break;
+    case "Orange":
+        text = "I am not a fan of orange.";
+        break;
+    case "Apple":
+        text = "How you like them apples?";
+        break;
+    default:
+        text = "I have never heard of that fruit...";
+    
+}
+console.log(text); // 'apple' girersek çıktı vermiyor o yüzden toLowerCase kuralı yapıcaz
+
+//toLowerCase()
+
+var textt;
+var fruitss = 'APple';
+fruitss = fruitss.toLowerCase();
+
+switch (fruitss){
+    case "Banana":
+        textt = "Banana is good";
+        break;
+    case "Lemon": // lemon da yazsa orange de yazsa aynı sonuç
+    case "Orange":
+        textt = "I am not a fan of orange.";
+        break;
+    case "Apple":
+        textt = "How you like them apples?";
+        break;
+    default:
+        textt = "I have never heard of that fruit...";
+    }
+    console.log(text); 
+
+    //Bir gün değişkeni
+    //Switch case pzt - çar - per -cmts in class
+    //Salı ve cuma ise TW var
+
+var çıktı;
+var gün = 'cumartesi';
+gün = gün.toLowerCase();
+switch (gün){
+    case "pazartesi":
+    case "çarşamba":
+    case "perşembe":
+    case "cumartesi":
+        çıktı = "in class günü";
+        break;
+    case "salı":
+    case "cuma":
+        çıktı = "workshop günü"
+        break;
+    default:
+        çıktı = "tatil";
+}
+console.log(çıktı);
