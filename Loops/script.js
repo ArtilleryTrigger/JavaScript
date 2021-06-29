@@ -33,10 +33,10 @@ for (let d = 0; d < brand.length; d++ ) {
 }
 console.log(brand.length);
 
-/*let brandd = "Clarusway"
-for (let e = 0; f = brandd.length; e < brandd.length; e++, f--) {
+let brandd = "Clarusway"
+for (let e = 0, f = brandd.length; e < brandd.length; e++, f--) {
     console.log(e + 1, brandd[e], f, brandd[f - 1]);
-} */
+}
 
 let bests = ["Clarusway", "Google", "Amazon", "Tesla"]
 for(let g = 0 ; g<bests.length; g++){
