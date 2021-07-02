@@ -5,6 +5,7 @@ while (i < 6) {
     i++;
 }
 console.log(`Total is : ${sum}`);
+
 // do-while
 let a = 6, 
     summ = 0;
@@ -111,13 +112,24 @@ for (let i = 1; i<= 100; i++ ) {
 }
 
 
+const number = parseInt(prompt('Terim sayısını girin:'));
+let n1 = 1, n2 = 2, ns;
 
+console.log('Fibonacci:');
 
+for (let ü = 1; ü < number; ü++) {
+    
+    ns = n1 + n2;
+    n1 = n2;
+    n2 = ns;
+}
+console.log(n1);
 
-
-
-
-
+const res = prompt('kelime giriniz:');
+function reverse(res){
+    return res.split("").reverse().join("");
+}
+console.log(reverse(res));
 
 
 
