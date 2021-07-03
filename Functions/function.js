@@ -124,3 +124,54 @@ console.log(result);*/
     }
     console.log('result : ', sum);
 })(4);*/
+
+/*function add100 (a){
+    return a + 100;
+}
+console.log(add100(1));*/
+
+/* const arrow = (a) => {
+    return a + 100;
+}
+console.log(arrow(2));*/
+
+/*const arrow = a=> a + 100;
+console.log(arrow(2));*/
+
+/*const user = 'Mark'
+const sayHi = (userFirstName= 'New User') => `Welcome ${userFirstName}`
+console.log(sayHi(user))*/
+
+// Zero division Error
+// const div = (num1,num2) => num1 / num2;
+/*const div = (num1,num2) => {
+    if(num2 === 0){
+        return 'Zero Divisions';
+    }
+    return num1/num2
+}*/
+//const div = (num1,num2) => num2 === 0 ? 'Zero Divisions' : num1 / num2
+//const div = (num1,num2) => num2 ?  num1 / num2 :'Zero Divisions';
+//console.log(div(18,0)); //nasıl kaldıracağız bu durumu (yukardaki 4 durum için ortak kod bu)
+
+/*const calcArea = radius => 3.14 * radius**2;
+console.log(calcArea(5));*/
+
+// this methodu
+/*const cat = {
+    name: 'Muezza',
+    age: 8,
+    whatName() {
+        return this.name
+    }
+};
+console.log(cat.whatName());  // Output: Muezza*/
+
+//Object return ederken
+/* //const car = () => { make: "Bmw" }
+const car = () => ({ make: "Bmw" })
+console.log(car()); */
+
+//arrow function iief kullanımı
+/*const iief = (num => num + 5)(10)
+console.log(iief);*/
